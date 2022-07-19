@@ -6,15 +6,21 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-header {
+.container {
     background: url('../img/hd-wallpaper-g20874115b_1280.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-header a {
+.container header nav {
+    margin-top: 10px;
+    display: flex;
+    position: absolute;
+}
+
+.container header nav a {
     color: whitesmoke;
     margin-top: 5px;
     padding: 1rem;
@@ -22,19 +28,26 @@ header a {
     text-decoration: none;
 }
 
-header .main-content {
-    margin-top: 20%;
+.container header nav a:hover {
+    border-bottom: 0.2rem solid whitesmoke;
+}
+
+.container .main-content {
+    display: flex;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: 15%;
     align-items: center;
     justify-content: center;
 }
 
-header .main-content h1 {
-    font-size: 5rem;
+.container .main-content h1 {
+    font-size: 7rem;
     color: whitesmoke;
     font-family: 'Quicksand', sans-serif;
 }
 
-header .main-content .line {
+.container .main-content .line {
     width: 20rem;
     height: 2px;
     color: whitesmoke;
@@ -43,17 +56,18 @@ header .main-content .line {
     align-items: center;
 }
 
-header .main-content button {
+.container .main-content button {
     margin-top: 50px;
     background-color: transparent;
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
     font-size: 2rem;
     color: whitesmoke;
     padding: 10px 50px;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
-header .main-content button:hover {
+.container .main-content button:hover {
     background-color: whitesmoke;
     color: black;
     cursor: pointer;
